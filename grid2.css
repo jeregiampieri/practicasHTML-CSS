@@ -1,0 +1,68 @@
+body{
+    background-color: #131415 ;
+}
+
+.titulo{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+
+.titulo::after{
+    content: '👾'
+}
+
+.subtitulo{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+}
+
+.subtitulo1{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+}
+
+.prop{
+    color: crimson;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+}
+
+.contenedor{
+    background-color: #3c3d3b;
+    border-radius: 1rem;
+    max-width: 1000px;
+    height: auto;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,50px);
+    /* justify-items: center;
+    align-items: center; */
+    /* shorthand (es justify y align pero en un solo comando) */
+    place-items: center;
+    margin-bottom: 15px;
+}
+
+.item{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: crimson;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.item:nth-child(even){
+    background-color: purple;
+}
+
+.contenedor1{
+    background-color: #3c3d3b;
+    border-radius: 1rem;
+    padding: 5px;
+    height: auto;
+    max-width: 1000px;
+    display: grid;
+}
