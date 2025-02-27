@@ -52,6 +52,7 @@ body{
     background-color: crimson;
     text-align: center;
     border-radius: 1rem;
+    align-content: center;
 }
 
 .item:nth-child(even){
@@ -65,4 +66,65 @@ body{
     height: auto;
     max-width: 1000px;
     display: grid;
+    grid-template-columns: repeat(2,150px);
+    grid-template-rows: repeat(2,150px);
+    gap: 10px;
+    /* justify-content: center;
+    align-content: center; */
+    /* shorthand */
+    place-content: center;
 }
+
+.contenedor2{
+    background-color: #3c3d3b;
+    border-radius: 1rem;
+    padding: 5px;
+    height: auto;
+    max-width: 1000px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100px;
+    /* grid-auto-flow:row; */
+    /* grid-auto-rows: 100px; */
+    margin-bottom: 20px;
+}
+
+.sub-contenedor{
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    max-width: 200px;
+    font-size: 0.9rem;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 1rem;
+    margin-bottom: 10px;
+}
+
+.contenedor3{
+    background-color: #3c3d3b;
+    border-radius: 1rem;
+    padding: 5px;
+    height: auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 100px;
+    gap: 10px;
+}
+
+/* Esto para indicar que estoy agarrando al primer elemento
+de los div con clase item-pos */
+.item-pos:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item-pos:nth-child(2){
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+
