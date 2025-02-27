@@ -1,0 +1,182 @@
+:root{
+    --rose: #960d85
+    --violeta: #8a389e
+}
+
+.titulo{
+    font-size: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.titulo::after{
+    content: '👾';
+}
+
+body{
+    background-color: #131415;
+}
+
+.subtitulo{
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.parrafo{
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.propiedad{
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    background-color: gray;
+    padding: 5px;
+    width: 300px;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.contenedor1{
+    background-color: #3c3d3b;
+    border-radius: 1rem;
+    max-width: 1000px;
+    /* Esto hace que el div vaya incrementando en su alto a 
+    medida que se le va agregando contenido */
+    height: auto;
+    overflow: visible;
+    display: grid;
+    grid-template-columns: 100px 200px 100px;
+    padding: 5px;
+}
+
+.prueba{
+    color: white;
+}
+
+.item{
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: red;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+/* Me pinta los elementos pares de un conjunto de elementos hermanos */
+.item:nth-child(even){
+    background-color: purple;
+}
+
+.contenedor2{
+    background-color: #3c3d3b;
+    border-radius: 1rem;
+    max-width: 1000px;
+    height: auto;
+    overflow: visible;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 100px 300px;
+    grid-template-rows: 250px 80px;
+    padding: 5px;
+}
+
+.prop{
+    font-size: 1.5rem;
+    font-style: oblique;
+    color: crimson;
+}
+
+.contenedor3{
+    background-color: #3c3d3b;
+    border-radius: 1rem;
+    max-width: 1000px;
+    height: auto;
+    overflow: visible;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    gap: 10px;
+    padding: 5px;
+}
+
+.contenedor4{
+    background-color: #3c3d3b;
+    border-radius: 1rem;
+    max-width: 1000px;
+    height: auto;
+    overflow: visible;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2,200px);
+    padding: 5px;
+}
+
+.prop1{
+    font-size: 1.5rem;
+    font-style: oblique;
+    color: crimson;
+    display: block;
+}
+
+.contenedor5{
+    background-color: #3c3d3b;
+    border-radius: 1rem;
+    max-width: 1000px;
+    height: auto;
+    overflow: visible;
+    gap: 10px;
+    display: grid;
+    padding: 5px;
+    grid-template-areas: 
+    'nav header header'
+    'nav content siderbar'
+    'nav footer footer';
+}
+
+.color{
+    color: white;
+}
+
+.nav{
+    grid-area: nav;
+    background-color: red;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    grid-area: header;
+    background-color: purple;
+    border: 1rem;
+    text-align: center;
+}
+
+.sidebar{
+    grid-area: siderbar;
+    background-color: aquamarine;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.content{
+    grid-area:content;
+    background-color: bisque;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: cadetblue;
+    border-radius: 1rem;
+    text-align: center;
+}
+

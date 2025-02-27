@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de medidas</title>
+    <link rel="stylesheet" href="./styleMedidas.css">
+</head>
+
+<body>
+
+    <main>
+
+        <h1 class="colorh1">Unidades absolutas</h1>
+        <div class="caja">Texto de prueba</div>
+        <div class="caja-mediana">200px</div>
+        <div class="caja-grande">300px</div>
+        <h1 class="colorh1">Unidades relativas</h1>
+        <!-- Este div se encarga de observar como funciona em, la explicación esta comentada en el css -->
+         <!-- Podemos ver el resultado en el navegador, donde texto prueba es más grande que otro texto sin la propiedad em -->
+        <div class="caja-mediana">
+            <p class="em">Texto de prueba con em</p>
+            <p> Otro texto pero sin la propiedad em</p>
+        </div>
+
+        <!-- Este div se encarga de observar como funciona rem, la explicación esta comentada en el css -->
+         <!-- Vemos los resultados y diferencias de los dos textos, uno sin la propiedad rem y el otro con la propiedad aplicada -->
+        <div class="caja-mediana">
+            <p class="rem"> Texto de prueba con rem</p>
+            <p>Otro texto pero sin la propiedad rem</p>
+        </div>
+
+       <!-- Este div se encarga de observar como funciona el porcentaje, la explicación esta comentada en el css -->
+        <div class="caja-mediana">
+            <div class="porcentaje"> Texto prueba</div>
+        </div>
+
+        <div class="caja-mediana">
+            <div class="vh">Viewport height</div>
+        </div>
+
+    </main>
+    
+</body>
+
+</html>

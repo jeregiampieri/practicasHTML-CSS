@@ -1,0 +1,36 @@
+/* Otra forma de poder importar los tipos de fuentes */
+
+/* <style>
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+</style> */
+
+.indie-flower{
+    font-family: 'Indie Flower';
+    color:brown;
+    /* Nos sirve para elegir el peso de la fuente (font-weight) */
+    font-weight: bold;
+    /* Nos sirve para elegir el estilo de la fuente (normal, cursiva, etc) */
+    font-style: normal;
+    /* Nos sirve para elegir el tamaño de la fuente */
+    font-size: larger;
+    /* Nos sirve para definir el espaciado entre las letras */
+    letter-spacing: 10px;
+    /* Nos sirve para definir el espaciado entre las palabras */
+    word-spacing: normal;
+    /* Nos sirve para definir el espacio entre los renglones */
+    line-height: normal;
+    /* Nos sirve para definir el alineado del texto */
+    text-align: center;
+    /* Nos sirve para transformar el texto */
+    text-transform: none;
+    /* Nos sirve para decorar el texto */
+    text-decoration: none;
+}
+
+.prueba p{
+    font-family: 'Indie Flower';
+    /* Estoy haciendo una prueba de las medidas */
+    font-size: 2em;
+    word-spacing: 10px;
+}
+

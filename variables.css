@@ -1,0 +1,67 @@
+:root{
+    /* colores */
+    --gradiente: linear-gradient(to right, #0f0c29,#302b63,#24243e);
+
+    /* tamaño fuentes */
+    --small: 12px;
+    --medium: 18px;
+    --large: 24px;
+    --extralarge: 32px;
+
+    /* box shadow */
+    --mi-shadow: 10px 20px 15px 0px rgba(0,0,0,0.5);
+    /* inset-shadow */
+    --inset: inset 10px 10px 20px 0px rgba(0,0,0,0.75);
+}
+
+.tamaño{
+    font-size: var(--extralarge);
+}
+
+
+.contenedor{
+    height: 400px;
+    width: 800px;
+    background-color: gray;
+    border-radius: 1rem;
+    display: flex;
+    gap: 10px;
+}
+
+.caja{
+    height: 200px;
+    width: 200px;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: var(--gradiente);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.small{
+    font-size: var(--small);
+}
+
+.medium{
+    font-size: var(--medium);
+}
+
+.large{
+    font-size: var(--large);
+}
+
+.extralarge{
+    font-size: var(--extralarge);
+}
+
+.shadow{
+    box-shadow: var(--mi-shadow);
+}
+
+.inset-shadow{
+    box-shadow: var(--inset)
+}

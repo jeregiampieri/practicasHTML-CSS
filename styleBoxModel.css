@@ -1,0 +1,43 @@
+.overflow-box-hidden{
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 25px;
+}
+
+.overflow-box-scroll{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    overflow: scroll;
+    margin-bottom: 20px;
+}
+
+.no-padding-div{
+    background-color: crimson;
+    width: 100px;
+}
+
+.padding-div{
+    width: 100px;
+    background-color: crimson;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.border-div{
+    width: 100px;
+    height: 100px;
+    background-color: azure;
+    border:5px dotted purple;
+    padding: 5px;
+}
+
+.margin-div{
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    margin: 40px 10px 20px 50px;
+}

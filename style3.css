@@ -1,0 +1,53 @@
+.caja {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 16px;
+    background-color: #6b7280;
+  }
+
+body {
+    background-color: black;
+}
+
+.bg-color{
+    background-color: crimson;
+}
+
+.bg-img{
+    /* Esta propiedad sola no nos permite ver la imagen debido al tamaño que tiene, por lo tanto hay que hacer uso de otras propiedades */
+    background-image: url('./img/bg-pattern.jpg');
+    /* Las propiedades extras que usamos para que se pueda ver la imagen */
+    background-position: center; 
+    background-size: cover;
+}
+
+.bg-repeat{
+    /* Si el tamaño de la caja aumenta, se repite la imagen */
+    /* Cada una de las propiedades tienen distintas variables, entonces debemos ver cada una para hacer cosas interesantes */
+    background-image: url(./img/bg-repeat.png);
+    background-repeat: repeat; 
+}
+
+.bg-attachment{
+    background-image: url(./img/bg-pattern.jpg);
+    background-attachment: fixed;
+    
+}
+
+.bg-position{
+    background-image: url(./img/bg-pattern.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+.bg-size{
+    background-image: url(./img/messi.webp);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.color p{
+    color:crimson
+}

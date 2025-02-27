@@ -1,0 +1,33 @@
+#h1Especifico {
+
+    color:crimson;
+    font-size: 25px;
+    font-style: oblique;
+
+}
+
+body {
+    background-color: #131415;
+}
+
+.pClase{
+    color:azure;
+    font-size: 20px;
+    text-decoration: line-through;
+}
+
+.classh2 {
+    color:crimson
+}
+
+#idh2{
+    color:azure;
+}
+
+.classP{
+    color:crimson
+}
+
+#idP{
+    color:azure
+}

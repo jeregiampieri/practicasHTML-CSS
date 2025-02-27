@@ -1,0 +1,55 @@
+/* No se ve muy bien por la gamma de colores que aplique
+pero en realidad si esta funcionando, si coloca otra gamma
+mas clara, se puede ver que esta todo bien */
+.tituloGradiente{
+    background: linear-gradient(#0f0c29,#302b63,#24243e);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.props-div{
+    width: 800px;
+    height: 200px;
+    background-color: grey;
+    border-radius: 1rem;
+    margin-bottom: 20px;
+}
+
+.flex{
+    display: flex;
+    gap: 10px;
+}
+
+/* Aprovecho para practicar gradiente de nuevo */
+.caja{
+    width: 100px;
+    height: 100px;
+    color: azure;
+    background: linear-gradient(#0f0c29,#302b63,#24243e) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}   
+
+/* Primer valor para eje X segundo valor para Y */
+.offsetXY{
+    box-shadow: 5px 5px;
+}
+
+/* Tercer valor para poder definir la difuminación */
+.blurRadius{
+    box-shadow: 5px 5px 5px
+}
+
+/* Cuarto valor para poder definir cuanto queremos que se
+expanda la sombra */
+.spreadRadius{
+    box-shadow: 5px 5px 5px 5px;
+}
+
+.colorSombra{
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.50);
+}
+

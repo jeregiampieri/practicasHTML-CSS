@@ -1,0 +1,24 @@
+/* Aca vamos a hacer los cambios de estilos a nuestro documento HTML */
+
+body {
+    background-color: #131415;
+}
+
+p {
+    color:aliceblue;
+    font-size: 20px
+}
+
+h1 {
+    color:aliceblue
+}
+
+#parrafoEspecifico {
+    color:crimson;
+    font-size: 24px
+}
+
+.selectorClase {
+    color:rebeccapurple;
+    font-size: 30px;
+}

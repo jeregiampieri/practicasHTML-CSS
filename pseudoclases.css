@@ -1,0 +1,100 @@
+.hover-1{
+    background-color: #e11d48;
+    padding: 5px;
+    border-radius: 1rem;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.hover-1:hover{
+    background-color: #8c54fb;
+}
+
+.props{
+    background-color: gray;
+    padding: 10px;
+    border-radius: 1rem;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.active-1:active{
+    color: #e11d48;
+}
+
+.visited-1:visited{
+    color: aqua;
+}
+
+.link-1:link{
+    color: greenyellow;
+}
+
+.color-letra{
+    color: aliceblue;
+}
+
+.focus-1{
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+}
+
+.focus-1:focus{
+    background-color: #e11d48;
+    color: white;
+}
+
+.props-div{
+    background-color: gray;
+    padding: 10px;
+    border-radius: 1rem;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.box{
+    background-color: crimson;
+    width: 100px;
+    height: 100px;
+}
+
+.nth-child-first .box:first-child{
+    background-color: purple;
+}
+
+.nth-child-last .box:last-child{
+    background-color: greenyellow;
+}
+
+.nth-child-odd .box:nth-child(odd){
+    background-color: green;
+}
+
+.nth-child-even .box:nth-child(even){
+    background-color: aquamarine;
+}
+
+.nth-child-number .box:nth-child(3){
+    background-color: blue;
+}
+
+.nth-child-numbern .box:nth-child(2n){
+    background-color: brown;
+}
+
+.nth-child-numbern-number .box:nth-child(2n + 3){
+    background-color: blue;
+}
+
+.checked-1:checked{
+    box-shadow: 0 0 0 3px orange;
+}
+

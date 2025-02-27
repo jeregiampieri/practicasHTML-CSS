@@ -1,0 +1,102 @@
+.titulo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: oblique;
+    margin-left: 50px;
+    font-size: 1.5rem;
+}
+
+.subtitulo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+
+/* Aca estoy definiendo la estructura de la caja */
+.caja {
+    width: 100px;
+    height: 100px;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Aca estoy definiendo la estructura básica de todos los divs */
+.bg-secundary{
+    width: 800px;
+    height: 200px;
+    background-color: gray;
+    border-radius: 1rem;
+}
+
+/* Aca estoy haciendo que cada div con class fondos se 
+encargue de colocar todos los elementos uno al lado del otro
+(a través del display flex) y además que cada uno tenga una
+separación de 10px */
+.fondos{
+    display: flex;
+    gap: 10px;
+}
+
+.textos{
+    display: flex;
+    gap: 10px;
+}
+
+.fondoRadial{
+    background:radial-gradient(#f69d3c,#3f87a6);
+}
+
+.fondoRepeat{
+    background: repeating-radial-gradient(#f69d3c,
+    #3f87a6 40px);
+}
+
+.fondoLineal{
+    background: linear-gradient(black,white);
+}
+
+.fondoRepeatLineal{
+    background: repeating-linear-gradient(black, white
+    40px);
+}
+
+.fondoGrados{
+    background: linear-gradient(70deg, black,white);
+}
+
+.fondoDireccionLineal{
+    background: linear-gradient(to right, black,white);
+}
+
+.texto{
+    border: 5px solid purple;
+    background: linear-gradient(to right, #c31432, #240b36);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.texto1{
+    border: 5px solid purple;
+    background: radial-gradient(black,white);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.fondoPrueba{
+    background: linear-gradient(to right,#0f0c29,#302b63,#24243e);
+}
+
+.ambos{
+    background: linear-gradient(to right, #0f0c29,#302b63,#24243e);
+}
+
+.ambos span{
+    background: linear-gradient(to right, #f12711,#f5af19);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}

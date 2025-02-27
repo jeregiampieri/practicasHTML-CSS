@@ -1,0 +1,98 @@
+/* Cajas que vamos a utilizar en los ejemplos */
+
+.caja-flex{
+    background-color: #8c54fb;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .prueba{
+    border: 5px solid#8c54fb;
+} */
+
+.row{
+    border: 10px solid purple;
+    /* Aca le estoy diciendo al div con class row que va a ser un contenedor flexbox, por defecto, se aplica el row*/
+    display: flex;
+    gap: 10px;
+}
+
+.row-reverse{
+    border: 10px solid purple;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+.column{
+    border: 10px solid purple;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.column-reverse{
+    border: 10px solid purple;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+}
+
+.no-wrap{
+    border: 10px solid purple;
+    display: flex;
+    gap: 10px;
+}
+
+.wrap{
+    border: 10px solid purple;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.flex-start{
+    border: 10px solid purple;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.flex-end{
+    border: 10px solid purple;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.center{
+    border: 10px solid purple;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.space-between{
+    border: 10px solid purple;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.space-around{
+    border: 10px solid purple;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.space-evenly{
+    border: 10px solid purple;
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,98 @@
+.ai-start{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.props-align{
+    background-color: #6b7280;
+    padding: 1rem;
+    border-radius: 1rem;
+    height: 350px;
+    max-width:500px;
+}
+
+.props-align-shrink{
+    background-color: #6b7280;
+    padding: 1rem;
+    border-radius: 1rem;
+    height: 350px;
+    max-width:200px;
+}
+
+.caja-flex{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.item1{
+    order: 3;
+}
+
+.item2{
+    order: 1;
+}
+
+.item3{
+    order: 2;
+}
+
+.grow1{
+    background-color: #e11d48;
+    flex-grow: 2;
+}
+
+.shrink1{
+    background-color: #e11d48;
+    flex-shrink: 2;
+}
+
+.shrink2{
+    flex-shrink: 4;
+}
+
+.shrink3{
+    flex-shrink: 8;
+}
+
+.basis{
+    display: flex;
+    gap: 10px;
+}
+
+.basis1{
+    flex-basis: 100px;
+}
+
+.basis2{
+    flex-basis: 200px;
+}
+
+.basis3{
+    flex-basis: 700px;
+}
+
+.self{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.self1{
+    align-self: flex-start;
+}
+
+.self2{
+    align-self: center;
+}
+
+.self3{
+    align-self: flex-end;
+}
+
