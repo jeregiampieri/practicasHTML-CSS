@@ -135,9 +135,18 @@ de los div con clase item-pos */
     height: auto;
     max-width: 1000px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,100px);
     gap: 10px;
     margin-bottom: 10px;
 }
 
+.item-pos1:nth-child(1){
+    grid-column: 1/3;
+}
+
+.item-pos1:nth-child(2){
+    grid-row: 1/4;
+    grid-column: 3/4;
+}
 
