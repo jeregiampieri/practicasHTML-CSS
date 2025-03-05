@@ -114,3 +114,27 @@ p{
 .scaleGeneral{
     transform: scale(1.1,1.2);
 }
+
+.contenedor-skew{
+    background-color: #3c3d3b;
+    border-radius: 1rem;
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+}
+
+.skewX{
+    transform: skewX(10deg);
+}
+
+.skewY{
+    transform: skewY(20deg);
+}
+
+.skewGeneral{
+    transform: skew(20deg,10deg);
+}
+
