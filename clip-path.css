@@ -81,6 +81,18 @@ body{
 
 .inset:hover{
     clip-path: inset(10% 0 0 0);
+    background: rgb(98,15,15);
+    background: linear-gradient(90deg, rgba(98,15,15,1) 0%, rgba(0,0,0,1) 50%, rgba(29,54,110,1) 100%);
+}   
+
+.circle{
+    clip-path: circle(50% at center bottom);
+    transition: clip-path 0.5s ease, background 0.5s ease;
 }
 
+.circle:hover{
+    clip-path: circle(50%);
+    background: rgb(98,15,15);
+    background: linear-gradient(90deg, rgba(98,15,15,1) 0%, rgba(0,0,0,1) 50%, rgba(110,29,92,1) 100%);
+}
 
