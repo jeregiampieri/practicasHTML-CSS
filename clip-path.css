@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap');
+
+body{
+    background-color: #131415;
+}
+
+
+.titulo{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.parrafo{
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: 200;
+}
+
+.linea{
+    background-color: crimson;
+    color: crimson;
+    border-radius: 1rem;
+    max-height: 5px;   
+    display: flex;
+    justify-content: center;
+    align-content: flex-start; 
+    overflow: hidden;
+}
+
+.lista{
+    list-style: none;
+    margin-left: -30px;
+    margin-bottom: 15px;
+}
+
+.letra{
+    font-family: "Poppins",sans-serif;
+    color: crimson;
+}
+
+.item::before{
+    content: "🕸️";
+}
+
+.contenedor{
+    background-color: gray;
+    border-radius: 1rem;
+    height: auto;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.contenedor1{
+    background-color: #3c3d3b;
+    border-radius: 1rem;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    background-color: crimson;
+    border-radius: 1rem;
+}
+
+.caja:nth-child(even){
+    background-color: purple;
+}
+
+.inset{
+    clip-path: inset(80% 0 0 0);
+    transition: clip-path 0.5s ease;
+}
+
+.inset:hover{
+    clip-path: inset(10% 0 0 0);
+}
+
+
