@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap');
+
+*{
+    font-family: "Poppins",sans-serif;
+    color: white;
+}
+
+body{
+    background-color: #131415;
+}
+
+.titulo{
+    color: white;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.parrafo{
+    font-weight: 400;
+    color: white;
+}
+
+.span{
+    font-weight: 400;
+    color: crimson;
+}
+
+.linea1{
+    width: 100vw;
+    height: 0.2vh;
+    background-color: crimson;
+}
+
+.contenedor{
+    width: auto;
+    height: auto;
+    background-color: #3c3d3b;
+    border-radius: 1rem;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    background-color: crimson;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parrafo1{
+    color: crimson;
+    font-weight: bold;
+}
+
+.contenedor1{
+    width: auto;
+    height: auto;
+    background-color: gray;
+    border-radius: 1rem;
+    padding: 5px;
+}
+
+.lista{
+    list-style: none;
+}
+
+.item::before{
+    content: '🕸️';
+    margin-left: -20px;
+}
+
+/* Voy a crear la animación */
+@keyframes moverCaja{
+    0% {
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(80em);
+    }
+}
+
+.animada{
+    animation-name: moverCaja;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.alternada{
+    animation-direction: alternate;
+}
+
+
+.timming{
+    animation-timing-function: ease-in-out;
+}
+
+.paused:hover{
+    animation-play-state: paused;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones</title>
+    <link rel="stylesheet" href="./animaciones.css">
+</head>
+
+<body>
+    
+    <h2 class="titulo">Animaciones</h2>
+    <p class="parrafo">Necesitamos de <span class="span">Propiedad 
+        animation y @keyframes
+    </span></p>
+    <div class="linea1"></div>
+    <h2 class="titulo">Pasos para crear una animación</h2>
+    <p class="parrafo">Creamos una caja</p>
+    <div class="contenedor">
+        <div class="caja no-animada">Caja no animada</div>
+    </div>
+    <p class="parrafo1">@keyframes</p>
+    <div class="contenedor1">@keyframes moverCaja {0% {transform:
+        translateX(0);} 100% {transform:translateX(200px);}}
+    </div>
+    <ul class="lista">
+        <li class="item"><span class="span">animation-name
+        </span>nombre de la animacion</li>
+        <li class="item"><span class="span">animation-duration
+        </span>duración de la animacion</li>
+        <li class="item"><span class="span">animation-iteration-count
+        </span>repetición de la animacion</li>
+    </ul>
+    <div class="contenedor">
+        <div class="caja animada">Caja animada</div>
+    </div>
+    <h2 class="titulo">¿Por qué vuelve de golpe?</h2>
+    <p class="parrafo1">animation-direction</p>
+    <div class="contenedor1">animation-direction: normal | reverse | 
+        alternate | alternate-reverse
+    </div>
+    <div class="contenedor">
+        <div class="caja animada alternada"></div>
+    </div>
+    <p>Podemos darle delay a la animación con <span class="span">
+        animation-delay</span></p>
+    <h2 class="titulo">Timming-function</h2>
+    <p class="parrafo1">animation-timming-function</p>
+    <div class="contenedor1">animation-timming-function: ease | 
+        ease-in | ease-in-out | ease-out | linear;
+    </div>
+    <div class="contenedor">
+        <div class="caja animada alternada timming"></div>
+    </div>
+    <h2 class="titulo">Estado de la animacion</h2>
+    <p class="parrafo1">animation-play-state</p>
+    <div class="contenedor1">elemento:hover { animation-play-state
+        : paused};
+    </div>
+    <div class="contenedor">
+        <div class="caja animada alternada timming paused"></div>
+    </div>
+
+
+</body>
+
+</html>
