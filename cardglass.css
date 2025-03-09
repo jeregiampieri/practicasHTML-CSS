@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    font-family: "Poppins",sans-serif;
+    background: url(./img/fondo.webp) no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: 300px;
+    border: 1px solid #ded9d9;
+
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8094887613248425) 70%, rgba(10,13,25,1) 100%);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 10px;
+    padding: 1rem;
+    -webkit-box-shadow: 0px 0px 6px 5px rgba(243, 241, 241, 0.73);-moz-box-shadow: 0px 0px 6px 5px rgba(243, 241, 241, 0.73);box-shadow: 0px 0px 6px 5px rgba(243, 241, 241, 0.73);
+}
+
+.card-header img{
+    object-fit: cover;
+    height: 215px;
+    border-radius: 0.5rem;
+}
+
+/* .titulo{
+    background: rgb(209,209,209);
+    background: linear-gradient(90deg, rgba(209,209,209,1) 0%, rgba(81,81,96,0.8094887613248425) 70%, rgba(65,71,96,1) 100%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+} */
+
