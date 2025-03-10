@@ -38,6 +38,10 @@ a{
 
 .slider li:target{
     opacity: 1;
+    animation-name: destello;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-direction: alternate;
 }
 
 .menu{
@@ -93,3 +97,16 @@ a{
 .a:hover{
     color: crimson;
 }
+
+@keyframes destello{
+    0%{
+        box-shadow: 0px -1px 18px 5px rgba(255,255,255,0.10);
+        -webkit-box-shadow: 0px -1px 18px 5px rgba(255,255,255,0.10);
+        -moz-box-shadow: 0px -1px 18px 5px rgba(255,255,255,0.10);
+    }
+    100%{
+        box-shadow: 0px -1px 18px 5px rgba(255,255,255,0.20);
+        -webkit-box-shadow: 0px -1px 18px 5px rgba(255,255,255,0.20);
+        -moz-box-shadow: 0px -1px 18px 5px rgba(255,255,255,0.20);
+    }
+} 
