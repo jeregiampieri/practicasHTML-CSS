@@ -36,7 +36,7 @@ a{
     opacity: 0;
 }
 
-.slider li:first-child{
+.slider li:target{
     opacity: 1;
 }
 
@@ -45,7 +45,6 @@ a{
     top: 100px;
     background-color: gray;
     width: 600px;
-    border-radius: 10px;
 }
 
 .menu ul{
@@ -53,6 +52,7 @@ a{
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    border: 1px solid white;
 }
 
 #slide1{
@@ -88,4 +88,8 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.a:hover{
+    color: crimson;
 }
