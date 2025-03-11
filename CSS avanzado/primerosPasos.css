@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap');
+
+/* Reseteo de los estilos */
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definicion de variables */
+:root{
+    --rose: #e11d48;
+    --purple: #8c54fb;
+    --black: #131415;
+    --white: #fff;
+}
+
+body{
+    background-color: var(--black);
+}
+
+.contenedor{
+    background-color: gray;
+    /* Estoy indicando que va a ocupar todo el alto de la pantalla */
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    background-color: var(--rose);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (max-width: 992px){
+    /* Cuando el tamaño máximo de la pantalla supere los 992px
+    se van a cambiar los colores de las cajas */
+    .caja{
+        background-color: var(--purple) ;    
+    }
+
+    .caja1{
+        height: 350px;
+        width: 250px;
+    }
+
+    .caja3{
+        display: none;
+    }
+}
+
+@media (max-width: 576px){
+
+    .caja{
+        height: 200px;
+        width: 200px;
+        background: rgb(126,30,30);
+        background: linear-gradient(90deg, rgba(126,30,30,1) 0%, rgba(13,13,103,0.907527977011117) 70%, rgba(99,25,99,1) 100%);
+        color: white;
+        transform: translateX(50px);
+    }
+
+    .contenedor{
+        display: grid;
+        grid-template-columns: 300px;
+        margin-top: -17px;
+    }
+
+}
+
+
+
