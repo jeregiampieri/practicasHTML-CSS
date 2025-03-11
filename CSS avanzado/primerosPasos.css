@@ -70,10 +70,14 @@ body{
     .contenedor{
         display: grid;
         grid-template-columns: 300px;
-        margin-top: -17px;
+    }
+
+    .caja3{
+        display: grid;
     }
 
 }
+
 
 
 
