@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+body{
+    background-color: #131415;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+    align-content: center;
+
+}
+
+.elemento{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: #e11d48;
+    border-radius: 1rem;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+/* El screen significa que los cambios se van a realizar sobre
+medios que tienen pantallas */
+@media screen and (max-width: 990px) {
+
+    .contenedor{
+        background-color: crimson;
+        flex-wrap: wrap;
+    }
+
+    .elemento{
+        background-color: cornflowerblue;
+    }
+
+}
+
+/* Algunas medidas que se pueden utilizar de base para distintos
+dispositivos */
+
+/* 320px - 480px: Mobile, celulares */
+/* 481px - 768px: Tablets */
+/* 769px - 1024px: Pantallas pequeñas */
+/* 1025px - 1200px: PC (pantallas de escritorios) */
+/* 1200px en adelante: Pantallas grandes */
+
