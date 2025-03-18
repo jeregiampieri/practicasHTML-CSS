@@ -26,7 +26,9 @@ main{
 a{
     color: white;
     font-size: 14px;
-    transition: all 0.2s;
+    transition: padding;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
 }
 
 .menu{
@@ -71,6 +73,15 @@ a:hover{
     padding: 5px;
 }
 
+a:focus{
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+
 @media (max-width: 800px){
 
     .menu{
@@ -81,7 +92,6 @@ a:hover{
         transform: translateX(200%);
         display: flex;
         position: fixed;
-        top: 80px;
         flex-direction: column;
         width: 200px;
         height: auto;
@@ -116,6 +126,10 @@ a:hover{
         color: transparent;
         background-clip: text;
         -webkit-background-clip: text;
+    }
+
+    .navbar-list a{
+        font-size: 18px;
     }
 
 }
