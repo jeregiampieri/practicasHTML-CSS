@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    background-color: #131415;
+}
+
+/* Esto es para cambiar el color de la imagen de negro a blanco */
+.imagenUTN{
+    filter: invert(1);
+    height: 100%;
+    transform: translateX(-35px);
+    width: 80px;
+}
+
+a{
+    color: white;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.menu{
+    /* 100% de ancho del contenedor padre (main) */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 0 30px;
+    background: rgb(43,43,43);
+    background: linear-gradient(180deg, rgba(43,43,43,1) 0%, rgba(19,20,21,1) 62%, rgba(0,0,0,1) 100%);
+    border-bottom: 1px solid gray;
+}
+
+/* Dentro de esta clase están los elementos 1,2 y 3 */
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar-list{
+    display: flex;
+    gap: 20px;
+}
+
+/* Este estilo se va a aplicar al input ya que estoy aplicando
+estilo por medio de el id (id=menu-toggle) */
+#menu-toggle{
+    /* Con esto hago que desaparezca la caja del checkbox */
+    display: none;
+}
+
+.menu-toggle{
+    /* Con esto hago que desaparezca la imagen del menu */
+    display: none;
+}
+
+a:hover{
+    padding: 5px;
+}
+
+@media (max-width: 800px){
+
+    .menu{
+        overflow-x: hidden;
+    }
+
+    .navbar-list{
+        transform: translateX(200%);
+        display: flex;
+        position: fixed;
+        top: 80px;
+        flex-direction: column;
+        width: 200px;
+        height: auto;
+        right: -28%;
+        transition: all 0.5s;
+    }
+
+    .menu-toggle{
+        display: flex;
+        position: fixed;
+        top: 19px;
+        right: 10px;
+    }
+
+    #menu-toggle:checked + .navbar-list{
+        transform: translateX(0%);
+        display: flex;
+        position: fixed;
+        top: 12.8%;
+        left: 84.8%;
+        flex-direction: column;
+        width: 200px;
+        height: auto;
+        right: -28%;
+    }
+
+    /* Para que el cambio de estilos se mantenga activo cuando
+    el usuario le da un solo click */
+    a:focus{
+        background: rgb(255,255,255);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+
+}
