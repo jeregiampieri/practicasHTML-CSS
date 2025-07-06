@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap');
+
+/* Reseteo de las variables */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    /* border: 1px solid red; */
+}
+
+body{
+    background-color: #131415;
+}
+
+/* Ajustes en el header */
+header{
+    display: flex;
+    background: #00293d;
+    background: linear-gradient(180deg,#00351e 0%, rgba(19, 20, 21, 1) 57%, rgba(19, 20, 21, 1) 100%);
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px 0px 0px;
+    /* height: 10vh; */
+    height: 65px;
+    position: fixed;
+}
+
+header img{
+    width: 100px;
+    margin-top: -11px;
+    margin-left: -15px;
+}
+
+/* Ajustes en la navbar */
+.navbar, 
+.navbar-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-list{
+    gap: 20px;
+}
+
+.navbar-list li a{
+    font-size: 0.9rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.navbar-list li:first-child a{
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.navbar-list a:hover{
+    padding: 0px 2px;
+}
+/* Fin de los ajustes en la navbar */
+/* Fin de los ajustes en el header */
+
+/* Ajuste del main */
+main{
+    display: flex;
+    /* Para tener cada sección una debajo de la otra */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    gap: 80px;
+}
+
+/* Ajuste del hero */
+#hero{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-top: 100px;
+    padding: 0px 200px 0px 250px;
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+.hero-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 0 1 auto;
+    align-self: flex-start;
+}
+
+.hero-info h1{
+    font-size: 48px;
+    line-height: 59px;
+    font-weight: 800;
+    background: #015e23;
+    background: linear-gradient(90deg,rgb(0, 97, 34) 0%, rgb(4, 194, 137) 73%, rgba(0, 112, 181, 1) 100%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    width: 80%;
+    min-width: 500px;
+}
+
+.hero-info p{
+    font-size: 15px;
+    width: 70%;
+    color: #adb9c7;
+}
+
+.boton-hero{
+    background: #131415;
+    color: var(--text-white);
+    /* Ajusta su ancho automaticamente en base al contenido que tiene dentro */
+    width: fit-content;
+    padding: 5px 20px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0.5px solid #ffffff49;
+    transition: all 1s ease;
+    margin-top: 10px;
+}
+
+.boton-hero:hover{
+    background-color: #fff;
+    color: #131415;
+    border: 1px solid #131415;
+}
+
+.hero-card{
+    background-color: #131415;
+    border: none;
+    padding: 25px 25px;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-card img{
+    width: 200px;
+    height: auto;
+}
+
+.hero-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, 
+    #058178, #056e81, #0b333b, #02926d,
+    #058178, #056e81, #0b333b, #02926d);
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+/* Fin del ajuste del hero */
+
+/* Comienzo de ajustes del contenido */
+#contenido{
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    width: 100%;
+}
+
+#contenido h1{
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 80px;
+}
+
+.card{
+    border: 1px solid white;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    border-radius: 1rem;
+    transition: all 0.5s ease;
+}
+
+.card p{
+    font-size: 0.9rem;
+}
+
+.card:hover{
+    background-color: rgba(255, 255, 255, 0.747);
+    color: #131415;
+}
+/* Fin de los ajustes del contenido */
+
+/* Comienzo de ajustes de aplicacion */
+
+#aplicaciones{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: -70px;
+}
+
+#aplicaciones ul {
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  max-width: 600px;
+}
+
+#aplicaciones li {
+  background: #102c25;
+  border-left: 5px solid #00cc88;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  color: #eee;
+  font-size: 1rem;
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#aplicaciones li:hover {
+  background: #184739;
+  transform: translateX(5px);
+}
+
+/* .aplicaciones-contenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: -40px;
+}
+
+.aplicaciones-contenedor h1{
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+.aplicaciones-contenedor ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+} */
+
+/* Fin ajustes de aplicación */
+
+/* Comienzo del footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+footer a, 
+footer p{
+    color: #adb9c7;
+    font-size: 14px;
+}
+
+footer span{
+    font-weight: 700;
+    color: #fff;
+}
+
+.navbar-footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-footer ul li a{
+    transition: all 0.5s ease;
+}
+
+.navbar-footer ul li a:hover{
+    padding: 0px 10px;
+}
+
+/* Fin del footer */
+
+
+
+
+
+

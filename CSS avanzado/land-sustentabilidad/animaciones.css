@@ -1,0 +1,7 @@
+/* Esto hace que el scroll hacia las secciones sea suave */
+html{
+    scroll-behavior: smooth;
+    /* Sirve para que cuando se haga scroll hacia una seccion
+    el navbar no tape cosas de la pagina */
+    scroll-padding-top: 80px;
+}
