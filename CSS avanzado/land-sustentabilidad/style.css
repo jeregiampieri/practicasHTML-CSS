@@ -145,7 +145,7 @@ main{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    position: relative;
+    position: relative; 
     display: flex;
     flex-direction: column;
 }
@@ -203,30 +203,45 @@ main{
 
 .cards{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 80%;
-    gap: 80px;
+    gap: 70px;
 }
 
 .card{
-    border: 1px solid white;
+    border: 0.5px solid rgba(255, 255, 255, 0.371);
     padding: 20px 20px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    width: 300px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
     border-radius: 1rem;
     transition: all 0.5s ease;
 }
 
-.card p{
+.card-info p{
+    color: #adb9c7;
     font-size: 0.9rem;
+}
+
+.video{
+    width: 50%;
+    height: auto;
+    border-radius: 1rem;
 }
 
 .card:hover{
     background-color: rgba(255, 255, 255, 0.747);
-    color: #131415;
 }
+
+.card:hover .card-info h1,
+.card:hover .card-info p {
+  color: #000 !important;
+  transition: color 0.3s ease;
+}
+
 /* Fin de los ajustes del contenido */
 
 /* Comienzo de ajustes de aplicacion */
